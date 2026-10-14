@@ -1,21 +1,21 @@
 class ContactsCli < Formula
   desc "A fast terminal contact manager with Google Contacts import"
   homepage "https://github.com/quintrino/contacts-cli"
-  version "0.1.0.3"
+  version "0.1.0.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/quintrino/contacts-cli/releases/download/v0.1.0-build.3/contacts-cli-v0.1.0-build.3-aarch64-apple-darwin.tar.gz"
-      sha256 "b7fdca1486bc77c02110ea57a27806c39f555280e8c5bd651bda0503be369ea9"
+      url "https://github.com/quintrino/contacts-cli/releases/download/v0.1.0-build.4/contacts-cli-v0.1.0-build.4-aarch64-apple-darwin.tar.gz"
+      sha256 "16e2380bdccb7633bcd270aed8e17ae633b4fedfc4e8e5475ed6bb93c9d50293"
     else
-      url "https://github.com/quintrino/contacts-cli/releases/download/v0.1.0-build.3/contacts-cli-v0.1.0-build.3-x86_64-apple-darwin.tar.gz"
-      sha256 "63c4e4e897576e43083b2ec0862024cc55d0d7d68295c1eff586d39b7b35fee9"
+      url "https://github.com/quintrino/contacts-cli/releases/download/v0.1.0-build.4/contacts-cli-v0.1.0-build.4-x86_64-apple-darwin.tar.gz"
+      sha256 "3e3b3b9fb32a6b462d83209f6276573efbf2314ef0d9a09c6d123ee7a124a6c0"
     end
   end
 
   on_linux do
-    url "https://github.com/quintrino/contacts-cli/releases/download/v0.1.0-build.3/contacts-cli-v0.1.0-build.3-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "a23cc92ca16d476656b13b88ebf31f27c88f66d0b6c6f6d96fd39addf55c79a6"
+    url "https://github.com/quintrino/contacts-cli/releases/download/v0.1.0-build.4/contacts-cli-v0.1.0-build.4-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "137555ba43aa2b5b5771d1c75dd62560d239f6c36dd53a8fa29a4782d4323ae0"
   end
 
   def install
