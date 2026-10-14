@@ -1,23 +1,23 @@
 class BrainfmCli < Formula
   desc "Unofficial Brain.fm CLI"
   homepage "https://github.com/quintrino/brainfm-cli"
-  version "0.1.0.3"
+  version "0.1.0.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/quintrino/brainfm-cli/releases/download/v0.1.0-build.3/brainfm-cli-v0.1.0-build.3-aarch64-apple-darwin.tar.gz"
-      sha256 "c4e2c57302be1dc56cca39410bee5cfc6ef299cc0a1cb9c6462708b2ebbd5e9d"
+      url "https://github.com/quintrino/brainfm-cli/releases/download/v0.1.0-build.4/brainfm-cli-v0.1.0-build.4-aarch64-apple-darwin.tar.gz"
+      sha256 "fae9a26794ca57392c2515b8d764bce6b83a958c9b74e5d7ebe768acc73a03c2"
     else
-      url "https://github.com/quintrino/brainfm-cli/releases/download/v0.1.0-build.3/brainfm-cli-v0.1.0-build.3-x86_64-apple-darwin.tar.gz"
-      sha256 "6b3f7d17e89253075365fc4b1e55a36f0b819c42d582d7f41f7a1bfb85eaf7fc"
+      url "https://github.com/quintrino/brainfm-cli/releases/download/v0.1.0-build.4/brainfm-cli-v0.1.0-build.4-x86_64-apple-darwin.tar.gz"
+      sha256 "78af302b2316ad5179c463cc2f0c78c9a39a9b3f0f1c55d51dee78468bc318db"
     end
   end
 
   on_linux do
     depends_on "openssl@3"
 
-    url "https://github.com/quintrino/brainfm-cli/releases/download/v0.1.0-build.3/brainfm-cli-v0.1.0-build.3-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "34396a2c97a74c2faa411fff75e06584357cf334b5ece203da218a67ec94edfa"
+    url "https://github.com/quintrino/brainfm-cli/releases/download/v0.1.0-build.4/brainfm-cli-v0.1.0-build.4-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "f338e54d4a0c1a5466638e82e1f6b1236ef3499f7c24652b96adb18620fbe9b1"
   end
 
   def install
