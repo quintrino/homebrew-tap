@@ -17,4 +17,5 @@ brew install quintrino/tap/<formula>
 | `brainfm-cli` | Unofficial Brain.fm CLI | [quintrino/brainfm-cli](https://github.com/quintrino/brainfm-cli) |
 | `discord-search-cli` | Search cached Discord channels and DMs | [quintrino/discord-search-cli](https://github.com/quintrino/discord-search-cli) |
 | `contacts-cli` | A fast terminal contact manager with Google Contacts import | [quintrino/contacts-cli](https://github.com/quintrino/contacts-cli) |
+| `ics-cli` | Open .ics calendar events in Google Calendar, Outlook, Microsoft 365 or Yahoo | [quintrino/ics-cli](https://github.com/quintrino/ics-cli) |
 
