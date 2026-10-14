@@ -14,7 +14,7 @@ brew install quintrino/tap/<formula>
 | Formula | Description |
 | --- | --- |
 | `godspeed-cli` | Rust-based Godspeed CLI |
-| `brainfm` | Unofficial Brain.fm CLI |
+| `brainfm-cli` | Unofficial Brain.fm CLI |
 
 ## Adding a formula
 
