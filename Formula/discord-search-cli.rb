@@ -1,21 +1,21 @@
 class DiscordSearchCli < Formula
   desc "Search cached Discord channels and DMs"
   homepage "https://github.com/quintrino/discord-search-cli"
-  version "0.1.0.1"
+  version "0.1.0.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/quintrino/discord-search-cli/releases/download/v0.1.0-build.1/discord-search-cli-v0.1.0-build.1-aarch64-apple-darwin.tar.gz"
-      sha256 "98c69d87859d52d55aa5596c99001badb74d4763082bb3515d51ccedccd8f64d"
+      url "https://github.com/quintrino/discord-search-cli/releases/download/v0.1.0-build.2/discord-search-cli-v0.1.0-build.2-aarch64-apple-darwin.tar.gz"
+      sha256 "a3d5e3162cdbce0887ef3ca81eb4e182391c3bd32b9a116cbc7165c0ae201f9e"
     else
-      url "https://github.com/quintrino/discord-search-cli/releases/download/v0.1.0-build.1/discord-search-cli-v0.1.0-build.1-x86_64-apple-darwin.tar.gz"
-      sha256 "2e8896e9c3bd8cda9033451be18431eb61856700e55fe92695e7fd3599b9dfb8"
+      url "https://github.com/quintrino/discord-search-cli/releases/download/v0.1.0-build.2/discord-search-cli-v0.1.0-build.2-x86_64-apple-darwin.tar.gz"
+      sha256 "82b26bf026bb2cf0c158dc4fbf7b528143ff48197e460493e2488bfea77dcefd"
     end
   end
 
   on_linux do
-    url "https://github.com/quintrino/discord-search-cli/releases/download/v0.1.0-build.1/discord-search-cli-v0.1.0-build.1-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "0f78c3ccbb50ff0cb0541c33660b4fabd2f6f2c02f31056ee3fa9af019ebc75f"
+    url "https://github.com/quintrino/discord-search-cli/releases/download/v0.1.0-build.2/discord-search-cli-v0.1.0-build.2-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "9c1db8de4a552fdfa121596a51c7dee641538a3f9bbf2635a502502e5ba64a79"
   end
 
   def install
