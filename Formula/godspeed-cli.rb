@@ -1,16 +1,23 @@
 class GodspeedCli < Formula
   desc "Rust-based Godspeed CLI"
   homepage "https://github.com/quintrino/godspeed-cli"
-  version "0.1.0"
+  version "0.11.0.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/quintrino/godspeed-cli/releases/download/v0.1.0/godspeed-cli-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "7992e71436f4a3267b810b8cdc2175bdc573d23d7ab362c5d12de674671f386f"
+      url "https://github.com/quintrino/godspeed-cli/releases/download/v0.11.0-build.2/godspeed-cli-v0.11.0-build.2-aarch64-apple-darwin.tar.gz"
+      sha256 "3333cefee563a49cb6e960f3cc984f15860f6788a85f5658542f38ef0ced3eaa"
     else
-      url "https://github.com/quintrino/godspeed-cli/releases/download/v0.1.0/godspeed-cli-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "fe3f6c7ff5650178de3d8b6605d2168c572885f7bd7367fe80abd490215c5e71"
+      url "https://github.com/quintrino/godspeed-cli/releases/download/v0.11.0-build.2/godspeed-cli-v0.11.0-build.2-x86_64-apple-darwin.tar.gz"
+      sha256 "aba6b3573a8206cde579253675d6b9e5f2879e5fcbc19662b04529141b414c47"
     end
+  end
+
+  on_linux do
+    depends_on "openssl@3"
+
+    url "https://github.com/quintrino/godspeed-cli/releases/download/v0.11.0-build.2/godspeed-cli-v0.11.0-build.2-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "efbef2b5461bbf794650c4826db1153610a47a3788fb830bbb79d78f286d1473"
   end
 
   def install
